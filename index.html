@@ -59,9 +59,10 @@
   </section>
 
   <style>
-    /* Bigger logo in the hero section only — header logo (.mark) is untouched */
-    .hero-mark {
-      height: 10000px;   /* adjust this number to taste */
+    /* Bigger logo in the hero section only — header logo (.mark) is untouched.
+       Selector uses element+class twice so it outranks ".brand .mark" in style.css */
+    a.hero-brand img.hero-mark {
+      height: 300px;   /* adjust this number to taste */
       width: auto;
     }
   </style>
